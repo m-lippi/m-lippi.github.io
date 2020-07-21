@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/academicons.css"/>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://cdn.rawgit.com/skipser/youtube-autoresize/master/youtube-autoresizer.js"></script>
 	</head>
 	<body class="is-preload">
 		
@@ -29,22 +30,116 @@
 
 		<!-- About me  -->
 			<section id="pub" class="main style1">
-				<div class="container">
+				<div class="container experiments">
 				<header class="major">
 				<h2>My experiments</h2>
 				</header>
 				
 					<div class="row">
-						<div class="col-6 col-12-medium">
-							
-							
+					
+						<div class="col-12 col-12-medium">
+						<h4>Human multi-robot workspace sharing</h4>
 						</div>
 						<div class="col-6 col-12-medium">
-							 <iframe width="420" height="315"
-								src="https://www.youtube.com/watch?v=eQwBT74F1Po">
-								</iframe> 
+							<iframe width="540" height="300" src="https://www.youtube.com/embed/eQwBT74F1Po" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+						<div class="col-6 col-12-medium">
 							
 						</div>
+					</div>
+					
+					<hr/>
+					
+					<div class="row">					
+					<div class="col-12 col-12-medium">
+					<h4>Human multi-robot physical interaction</h4>
+					</div>
+					<div class="col-6 col-12-medium">
+						<iframe width="540" height="300" src="https://www.youtube.com/embed/eQwBT74F1Po" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-6 col-12-medium">
+						The objective is to devise a general framework to allow a human operator to physically interact with an object manipulated by a multi-manipulator system in a distributed setting. A two layer solution is devised. In detail, at the top layer an arbitrary virtual dynamics  is considered for the object  with the virtual input chosen as the solution of an optimal Linear Quadratic Tracking (LQT)  problem where both the human and  robots' intentions are taken into account, being the former online estimated by Recursive Least Squares (RLS) technique. The output of this layer is a desired trajectory of the object  which is the input of the bottom layer and from which desired trajectories for the robot end effectors are computed based on the closed-chain constraints. Each robot, then, implements a  time-varying gain  adaptive control law  so as to take into account model uncertainty and internal wrenches that inevitably raise due to synchronization errors and dynamic and kinematic uncertainties. Remarkably, the overall solution is devised in a distributed setting by resorting to a leader-follower approach and distributed observers.
+Simulations with three 6-DOFs serial chain manipulators mounted on mobile platforms corroborate the theoretical findings.
+					</div>
+					</div>
+					
+					<hr/>
+					<div class="row">					
+					<div class="col-12 col-12-medium">
+					<h4>Contact classification in human-robot physical interaction</h4>
+					</div>
+					<div class="col-6 col-12-medium">
+							<iframe width="540" height="300" src="https://www.youtube.com/embed/4K6Ev-0lnNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					
+					</div>
+					<div class="col-6 col-12-medium">
+						In this scenario  a robot is able to both
+carry out autonomous tasks and to physically interact with a
+human operator to achieve a common objective. Since
+human and robot share the same workspace both accidental
+and intentional contacts between them might arise. Therefore,
+a solution based on Recurrent Neural Networks (RNNs) is
+proposed to detect and classify the nature of the contact with
+the human, even in the case the robot is interacting with the
+environment because of its own task. Then, reaction strategies
+are defined depending on the nature of contact: human avoid-
+ance with evasive action in the case of accidental interaction,
+and admittance control in the case of intentional interaction.
+In regard to the latter, Control Barrier Functions (CBFs) are
+considered to guarantee the satisfaction of robot constraints,
+while endowing the robot with a compatible compliant behavior.
+					</div>
+					</div>
+					
+					<hr/>
+					<div class="row">					
+					<div class="col-12 col-12-medium">
+					<h4>Visual action planning for deformable object manipulation</h4>
+					</div>
+					<div class="col-6 col-12-medium">
+						<iframe width="540" height="300" src="https://www.youtube.com/embed/eQwBT74F1Po" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-6 col-12-medium">
+						
+					</div>
+					</div>
+					<hr/>
+					
+					
+					<div class="row">					
+					<div class="col-12 col-12-medium">
+					<h4>Benchmarking bimanual cloth manipulation </h4>
+					</div>
+					<div class="col-6 col-12-medium">
+						<iframe width="540" height="300" src="https://www.youtube.com/embed/eQwBT74F1Po" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-6 col-12-medium">
+						
+					</div>
+					</div>
+					<hr/>
+					
+					
+					<div class="row">					
+					<div class="col-12 col-12-medium">
+					<h4>Distributed fault detection and isolation</h4>
+					</div>
+					<div class="col-6 col-12-medium">
+						<iframe width="540" height="300"  src="https://www.youtube.com/embed/1ZdyH6B9tNE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-6 col-12-medium">
+						The problem of defining a Distributed Fault Detection and Isolation strategy for a team of mobile manipulators performing a cooperative mission is addressed. 
+						The overall system relies on an observer-controller scheme, where each robot estimates the global state of the team through a distributed observer requiring 
+						information exchange with the direct neighbor robots; then, the global state estimate is used by each robot to compute the estimated local input so as to achieve 
+						a specific task. The observer-controller scheme also allows to define a set of residual vectors that can be used by the robots to detect and isolate faults 
+						affecting anyone of the teammates, even if not in direct communication, without increasing the computational burden and the information exchange. 
+						The approach is validated with a heterogeneous team of three robots perform a cooperative task.
+					</div>
+					</div>
+					<hr/>
+					
+					
+					
 				</div>
 			</section>
 

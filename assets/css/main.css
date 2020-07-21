@@ -3777,3 +3777,13 @@ pointer-events: none;
 	background-color: #574f6e;
 	    font-size: 1em;
 }
+
+.experiments iframe{
+	max-width:100%;
+}
+
+.experiments div{
+    font-size: 0.95em;
+    line-height: 133%;
+
+}

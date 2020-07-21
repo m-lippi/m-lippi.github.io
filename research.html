@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Martina Lippi - Publications</title>
+		<title>Martina Lippi - Experiments</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -41,36 +41,28 @@
 						<h4>Human multi-robot workspace sharing</h4>
 						</div>
 						<div class="col-6 col-12-medium">
-							<iframe width="540" height="300" src="https://www.youtube.com/embed/eQwBT74F1Po" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="540" height="300" src="https://www.youtube.com/embed/aYU2MFJ_l7o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 						</div>
 						<div class="col-6 col-12-medium">
-							
+							In this work a solution to  human multi-robot safe coexistence is presented in which multiple mobile manipulators are in charge of performing a cooperative task in a workspace shared with human operators.
+The safety of the interaction is assessed by a safety field that takes into account the whole system and is general enough concerning its expression.
+Based on the value of this field, the cooperative task trajectory is properly modified so as to ensure a safe interaction while trying to preserve  as much as possible the nominal task, which is instead completely aborted whenever the safety of the interaction cannot be guaranteed.
+The solution is first designed within a centralized architecture and, then, upon this,  
+a distributed implementation is presented which, in general, aims to exhibit the same performance as the centralized counterpart.
+Finally, both simulations and experiments on two Comau SmartSix corroborate the designed solution.
 						</div>
 					</div>
 					
 					<hr/>
 					
+					
+					
 					<div class="row">					
 					<div class="col-12 col-12-medium">
-					<h4>Human multi-robot physical interaction</h4>
+					<h4>Contact classification and reaction in human-robot physical interaction</h4>
 					</div>
 					<div class="col-6 col-12-medium">
-						<iframe width="540" height="300" src="https://www.youtube.com/embed/eQwBT74F1Po" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-					<div class="col-6 col-12-medium">
-						The objective is to devise a general framework to allow a human operator to physically interact with an object manipulated by a multi-manipulator system in a distributed setting. A two layer solution is devised. In detail, at the top layer an arbitrary virtual dynamics  is considered for the object  with the virtual input chosen as the solution of an optimal Linear Quadratic Tracking (LQT)  problem where both the human and  robots' intentions are taken into account, being the former online estimated by Recursive Least Squares (RLS) technique. The output of this layer is a desired trajectory of the object  which is the input of the bottom layer and from which desired trajectories for the robot end effectors are computed based on the closed-chain constraints. Each robot, then, implements a  time-varying gain  adaptive control law  so as to take into account model uncertainty and internal wrenches that inevitably raise due to synchronization errors and dynamic and kinematic uncertainties. Remarkably, the overall solution is devised in a distributed setting by resorting to a leader-follower approach and distributed observers.
-Simulations with three 6-DOFs serial chain manipulators mounted on mobile platforms corroborate the theoretical findings.
-					</div>
-					</div>
-					
-					<hr/>
-					<div class="row">					
-					<div class="col-12 col-12-medium">
-					<h4>Contact classification in human-robot physical interaction</h4>
-					</div>
-					<div class="col-6 col-12-medium">
-							<iframe width="540" height="300" src="https://www.youtube.com/embed/4K6Ev-0lnNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					
+							<iframe width="540" height="300" src="https://www.youtube.com/embed/AFwITYMPju8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="col-6 col-12-medium">
 						In this scenario  a robot is able to both
@@ -94,13 +86,35 @@ while endowing the robot with a compatible compliant behavior.
 					<hr/>
 					<div class="row">					
 					<div class="col-12 col-12-medium">
-					<h4>Visual action planning for deformable object manipulation</h4>
+					<h4>Human multi-robot physical interaction</h4>
 					</div>
 					<div class="col-6 col-12-medium">
 						<iframe width="540" height="300" src="https://www.youtube.com/embed/eQwBT74F1Po" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="col-6 col-12-medium">
-						
+						The objective is to devise a general framework to allow a human operator to physically interact with an object manipulated by a multi-manipulator system in a distributed setting. 
+						A two layer solution is devised. At the top layer  an optimal Linear Quadratic Tracking  problem is solved where both the human and  robots' intentions are taken into account, being the former online estimated by Recursive Least Squares (RLS) technique. 
+						The output of this layer is a desired trajectory of the object  which is the input of the bottom layer and from which desired trajectories for the robot end effectors are computed based on the closed-chain constraints. 
+						Each robot, then, implements a  time-varying gain  adaptive control law  so as to take into account model uncertainty and internal wrenches. 
+Simulations with three 6-DOFs serial chain manipulators mounted on mobile platforms corroborate the theoretical findings.
+					</div>
+					</div>
+					
+					<hr/>
+					<div class="row">					
+					<div class="col-12 col-12-medium">
+					<h4>Visual action planning for rigid and deformable object manipulation</h4>
+					</div>
+					<div class="col-6 col-12-medium">
+						<iframe width="540" height="300" src="https://www.youtube.com/embed/-3pjhsBhGp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-6 col-12-medium">
+						In this video, we present  a framework  for  visual  action  planning of complex manipulation tasks with high-dimensional state-spaces, such  as  manipulation  of  deformable  objects. 
+						Planning  is performed  in  a  low-dimensional  latent  state  space  that  embeds images.  We  define  and  implement  a  Latent  Space  Roadmap (LSR)  which  is  a  graph-based  structure  that  globally  captures the latent system dynamics. 
+						Our framework consists of two main components:  a  Visual  Foresight  Module  (VFM)  that  generates a  visual  plan  as  a  sequence  of  images,  
+						and  an  Action  Proposal Network (APN) that predicts the actions between them. We show the effectiveness of the method on a simulated box stacking taskas  
+						well  as  a  T-shirt  folding  task  performed  with  a  Baxter  robot.
+
 					</div>
 					</div>
 					<hr/>
@@ -111,10 +125,10 @@ while endowing the robot with a compatible compliant behavior.
 					<h4>Benchmarking bimanual cloth manipulation </h4>
 					</div>
 					<div class="col-6 col-12-medium">
-						<iframe width="540" height="300" src="https://www.youtube.com/embed/eQwBT74F1Po" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe width="540" height="300" src="https://www.youtube.com/embed/doPazhka4Fc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="col-6 col-12-medium">
-						
+						Cloth manipulation is a challenging task that, despite its importance, has received relatively little attention compared to rigid object manipulation. In this letter, we provide three benchmarks for evaluation and comparison of different approaches towards three basic tasks in cloth manipulation: spreading a tablecloth over a table, folding a towel, and dressing. The tasks can be executed on any bimanual robotic platform and the objects involved in the tasks are standardized and easy to acquire. We provide several complexity levels for each task, and describe the quality measures to evaluate task execution. Furthermore, we provide baseline solutions for all the tasks and evaluate them according to the proposed metrics.
 					</div>
 					</div>
 					<hr/>

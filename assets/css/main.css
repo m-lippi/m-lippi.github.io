@@ -3787,3 +3787,12 @@ pointer-events: none;
     line-height: 133%;
 
 }
+
+
+.bibbase_paper_content {
+    display: none;
+}
+
+.bibbase.link {
+    border: none;
+}
